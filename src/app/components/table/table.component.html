@@ -1,0 +1,19 @@
+<mat-card class="table-card">
+  <mat-card-content class="table-card-content">
+
+     <table matSort class="table" (matSortChange)="sortData($event)">
+      <tr>
+        <th mat-sort-header="URL">URL</th>
+        <th mat-sort-header="Platform">Platform</th>
+        <th mat-sort-header="Time">Time</th>
+      </tr>
+
+      <tr *ngFor="let postData of sortedData">
+        <td><a href="{{postData.URL}}" target="_blank">{{postData.URL}}</a></td>
+        <td>{{postData.Platform}}</td>
+        <td>{{postData.Time}}</td>
+      </tr>
+    </table>
+
+  </mat-card-content>
+</mat-card>

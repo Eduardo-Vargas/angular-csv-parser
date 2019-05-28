@@ -1,0 +1,23 @@
+.table-card {
+  overflow-y: scroll !important;
+  border-radius: 8px !important;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.table-card-content {
+  text-align: center;
+  height: fit-content;
+  overflow: scroll;
+}
+
+.table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  text-align: left !important;
+}
